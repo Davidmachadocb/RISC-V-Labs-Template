@@ -4,7 +4,7 @@ extern void func(char* src, char* dst);
 
 int main(){
     char src[] = "Hello";
-    char dst[6]; // Make sure it's big enough (including null terminator)
+    char dst[6];
     func(src, dst);
 
     printf("%s\n", dst);
