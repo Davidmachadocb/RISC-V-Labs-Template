@@ -11,13 +11,10 @@ LOOP:
 
     slli t1, t1, 1   #multiplica acumulador por 2
 
-    li t3, '1'       #compara com '1'
-    beq t2, t3, set_bit
+    addi t2, t2, -48
+    add t1, t1, t2   #soma 1 ao acumulador
 
     j avancar
-
-set_bit:
-    addi t1, t1, 1   #soma 1 ao acumulador
 
 avancar:
     addi t0, t0, 1   #avança para o próximo caractere
