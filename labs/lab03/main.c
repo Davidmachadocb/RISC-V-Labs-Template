@@ -4,7 +4,7 @@ extern void func(int* input, int* result);
 
 int main() {
 
-    char bin[] = "1011"; // 11 em decimal
+    char bin[] = "010010"; //
     int result;
 
     func((int*)bin, &result);  
